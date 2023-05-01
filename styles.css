@@ -6,40 +6,6 @@
   --lightblack: #373737;
 }
 
-body {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#one {
-  background-color: var(--almostwhite);
-  width: 19vw;
-  height: 100vh;
-}
-
-#two {
-  background-color: var(--almostwhite);
-  width: 19vw;
-  height: 100vh;
-}
-
-#three {
-  background-color: var(--almostwhite);
-  width: 19vw;
-  height: 100vh;
-}
-
-#four {
-  background-color: var(--almostwhite);
-  width: 19vw;
-  height: 100vh;
-}
-
-#five {
-  background-color: var(--almostwhite);
-  width: 19vw;
-  height: 100vh;
-}
 #particles-js {
   display: flex;
   height: 100vh;
@@ -50,3 +16,7 @@ body {
   z-index: -1;
   background-color: #6c90b4;
 }
+
+/* #nav {
+  
+} */

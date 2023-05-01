@@ -75,7 +75,7 @@ particlesJS("particles-js", {
         mode: "repulse",
       },
       onclick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       resize: true,
@@ -95,7 +95,7 @@ particlesJS("particles-js", {
         speed: 3,
       },
       repulse: {
-        distance: 200,
+        distance: 100,
         duration: 0.4,
       },
       push: {
@@ -108,3 +108,7 @@ particlesJS("particles-js", {
   },
   retina_detect: true,
 });
+
+// function removeEntities {
+//   if()
+// }
