@@ -6,6 +6,11 @@ img {
   max-width: fit-content;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 h1, 
 h2 {
   font-family: 'Montserrat', sans-serif;
@@ -15,6 +20,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: none;
+  /* display: flex; */
 }
 
 #pagewrapper {
@@ -31,10 +37,6 @@ body {
   --almostwhite: #e1dfdf;
   --darkgrey: #999d9f;
   --lightblack: #373737;
-}
-
-p {
-  font-family: 'Quicksand', sans-serif;
 }
 
 #particles-js {
@@ -56,6 +58,7 @@ section {
 p,
 li {
   color: var(--almostwhite);
+  font-family: 'Montserrat', sans-serif;
 }
 
 #nav {
@@ -65,6 +68,9 @@ li {
   background-color: var(--transparentbox);
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 2vw;
+  align-items: center;
   font-size: 2.2rem;
   height: 8vh;
   text-align: center;
@@ -98,6 +104,8 @@ footer {
   height: 20vh;
   text-align: center;
   margin-top: 10vh;
+  align-self: flex-end;
+  flex-shrink: 0; 
 }
 
 footer a {
@@ -106,7 +114,7 @@ footer a {
 
 #nav h1 {
   font-size: 2.2rem;
-  padding-right: 36vw;
+  
 }
 
 #nav a {
