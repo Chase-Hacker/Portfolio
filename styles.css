@@ -1,5 +1,4 @@
 * {
-
   box-sizing: border-box;
   color: var(--almostwhite);
 }
@@ -7,18 +6,35 @@ img {
   max-width: fit-content;
 }
 
+h1, 
+h2 {
+  font-family: font-family: 'Montserrat', sans-serif;
+}
+
 body {
   padding: 0;
   margin: 0;
+  overflow-x: none;
+}
+
+#pagewrapper {
+  width: 90%;
+  margin: 0 auto;
 }
 
 :root {
   --lightblue: #6c90b4;
   --darkerblue: #486c90;
+  --bordercolor: #476178;
+  --transparentbox: #5a7896b0;
   --box: #5a7896;
   --almostwhite: #e1dfdf;
   --darkgrey: #999d9f;
   --lightblack: #373737;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
 }
 
 #particles-js {
@@ -45,8 +61,8 @@ li {
 #nav {
   position: sticky;
   top: 0;
-  width: 100vw;
-  background-color: var(--box);
+  width: 100%;
+  background-color: var(--transparentbox);
   display: flex;
   flex-wrap: nowrap;
   font-size: 2.2rem;
@@ -54,9 +70,39 @@ li {
   text-align: center;
 }
 
-/* footer {
+#nav2 {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+}
 
-} */
+#copyright {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  margin-top: 7vh;
+}
+
+#portfolio2 {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+}
+
+footer {
+  width: 100%;
+  background-color: var(--transparentbox);
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1.5rem;
+  height: 20vh;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+footer a {
+  margin-top: 1vh;
+}
 
 #nav h1 {
   font-size: 2.2rem;
@@ -68,29 +114,26 @@ li {
   padding-right: 1vw;
 }
 
-/* #intro > div {
-  width: 60%;
-} */
-
 #picture {
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   padding-top: 5vh;
   width: 40%;
+  padding-left: 10%;
 }
 
 #picture img {
   height: 70vh;
-  border: 8px solid var(--box);
+  border: 6px solid var(--bordercolor);
   border-radius: 5% 5%;
 }
 
 #intro {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
 }
 
 #introText {
@@ -103,17 +146,18 @@ li {
 }
 
 #opener {
-  background-color: var(--box);
+  background-color: var(--transparentbox);
   height: fit-content;
   padding: 2vw;
-  justify-content: center;
-  margin-left: 5vw;
+  justify-content: flex-start;
+  border: 6px solid var(--bordercolor);
+  border-radius: 8px 8px;
 }
 
 #introWrapper {
   display: flex;
-  justify-content: center;
-  padding-top: 5vh;
+  /* justify-content: center; */
+  padding-top: 20vh;
   width: 60%;
 }
 
@@ -122,8 +166,10 @@ li {
   flex-wrap: wrap;
   background-color: var(--box);
   justify-content: center;
-  width: 90%;
+  width: 100%;
   margin-top: 5vh;
+  border: 6px solid var(--bordercolor);
+  border-radius: 8px 8px;
 }
 
 #tools h1 {
@@ -135,14 +181,13 @@ li {
 }
 
 #tools {
- display: flex;
- justify-content: center;
- flex-wrap: wrap;
- width: 100%;
- margin: 0;
- margin-top: 5vh;
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  margin-top: 5vh;
 }
-
 
 #figma,
 #vs,
@@ -154,13 +199,15 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: 6px solid var(--bordercolor);
+  border-radius: 8px 8px;
   padding: 2vh;
   justify-content: center;
 }
 
 #toolsWrapper {
   display: flex;
-  justify-content: space-around ;
+  justify-content: space-around;
   width: 100%;
   font-size: 1.5rem;
 }
