@@ -33,6 +33,7 @@ body {
   --darkerblue: #486c90;
   --bordercolor: #476178;
   --transparentbox: #5a7896b0;
+  --lesstransparentbox: #5a7896b9;
   --box: #5a7896;
   --almostwhite: #e1dfdf;
   --darkgrey: #999d9f;
@@ -47,7 +48,8 @@ body {
   left: 0;
   position: fixed;
   z-index: -1;
-  background-color: #6c90b4;
+  background-color: #4447df;
+  /* background-color: #6c90b4; */
 }
 
 section {
@@ -65,7 +67,7 @@ li {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: var(--transparentbox);
+  background-color: var(--lesstransparentbox);
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -74,6 +76,160 @@ li {
   font-size: 2.2rem;
   height: 8vh;
   text-align: center;
+}
+
+
+#resume {
+  display: flex;
+  margin: 0;
+  width: 100%;  
+  justify-content: center;
+
+}
+
+#download {
+  display: flex;
+  background-color: var(--lesstransparentbox);
+  padding: 2vh;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin: 0;
+  width: 100%;
+}
+
+#resume p {
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.prointro {
+  width: 50%;
+  margin: 3vh;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--transparentbox);
+}
+
+#code-projects {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2vh;
+  width: 100%;
+}
+
+#delve,
+#EECU,
+#layout,
+#cownect4 {
+  background-color: var(--transparentbox);
+  padding: 2vh;
+  width: 40%;
+  margin-top: 4vh;
+}
+
+#essay,
+#delvetext {
+  background-color: var(--transparentbox);
+  padding: 2vh;
+  width: 40%;
+  margin-top: 4vh;
+}
+
+#delve h2,
+#EECU h2,
+#layout h2,
+#cownect4 h2{
+  display: flex;
+  justify-content: center;
+  font-size: 1.75rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#prointro-wrapper,
+#writingintro-wrapper {
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#thank-you {
+  font-size: 2rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--transparentbox);
+  padding: 5vh;
+}
+
+#thankyou-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5vh;
+}
+
+#writingprojects {
+  margin-top: 4vh;
+}
+
+#projects h2 {
+  font-size: 1.5rem;
+}
+
+#aboutme-content {
+  margin-top: 5vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#hobbies {
+  padding: 5vh;
+  background-color: var(--transparentbox);
+  width: 100%;
+  margin: 2%;
+}
+
+#postPlan {
+  padding: 5vh;
+  background-color: var(--transparentbox);
+  width: 100%;
+  margin: 2%;
+}
+
+#Achievements {
+  padding: 5vh;
+  background-color: var(--transparentbox);
+  width: 100%;
+  margin: 2%;
+}
+
+#resume-contact {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+#line {
+  width: 100%;
+  border: 1px solid white;
+}
+
+#resume-wrapper {
+  background-color: var(--transparentbox);
+  padding: 5vw;
+  margin-top: 5vh;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 #nav2 {
@@ -120,6 +276,7 @@ footer a {
 #nav a {
   padding-left: 1vw;
   padding-right: 1vw;
+  background-color: var(--lesstransparentbox);
 }
 
 #picture {
@@ -221,8 +378,9 @@ footer a {
 }
 
 .logo {
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 75%;
+
 }
 
 .logocont {
