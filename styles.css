@@ -48,7 +48,7 @@ body {
   left: 0;
   position: fixed;
   z-index: -1;
-  background-color: #4447df;
+  background-color: var(--lightblue);
   /* background-color: #6c90b4; */
 }
 
@@ -67,7 +67,7 @@ li {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: var(--lesstransparentbox);
+  background-color: var(--transparentbox);
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -109,6 +109,63 @@ li {
   display: flex;
   justify-content: center;
   background-color: var(--transparentbox);
+}
+
+.slider {
+  width: 100%;
+  max-width: 1920px;
+  height: 840px;
+  position: relative;
+  overflow: hidden;  /* <===  */
+  border-radius: 15px;
+}
+
+.slide {
+  width: 100%;
+  max-width: 1920px;
+  height: 840px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+#carousel {
+  display: grid;
+  height: 50%;
+  place-items: center;
+  width: 90%;
+}
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
 }
 
 #code-projects {
@@ -276,7 +333,6 @@ footer a {
 #nav a {
   padding-left: 1vw;
   padding-right: 1vw;
-  background-color: var(--lesstransparentbox);
 }
 
 #picture {
