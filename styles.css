@@ -30,7 +30,7 @@ body {
 
 :root {
   --lightblue: #6c90b4;
-  --darkerblue: #486c90;
+  --darkerblue: #154b81;
   --bordercolor: #476178;
   --transparentbox: #5a7896b0;
   --lesstransparentbox: #5a7896b9;
@@ -48,7 +48,7 @@ body {
   left: 0;
   position: fixed;
   z-index: -1;
-  background-color: var(--lightblue);
+  background-color: var(--darkerblue);
   /* background-color: #6c90b4; */
 }
 
@@ -140,6 +140,26 @@ li {
   place-items: center;
   width: 90%;
 }
+
+.explanation {
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+}
+
+.explanation {
+  font-size: 1.25rem;
+}
+
+.explanation-wrapper {
+  width: 50%;
+  flex-direction: column;
+  background-color: var(--box);
+  padding: 2vh;
+  margin: 5vh;
+}
+
 
 .btn {
   position: absolute;
