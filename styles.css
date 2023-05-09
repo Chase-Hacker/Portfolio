@@ -9,6 +9,7 @@ img {
 html,
 body {
   height: 100%;
+  overfl
 }
 
 h1, 
@@ -198,6 +199,10 @@ li {
   width: 100%;
 }
 
+.about-wrapper {
+  width: 40%;
+}
+
 #delve,
 #EECU,
 #layout,
@@ -231,7 +236,7 @@ a {
 
 #prointro-wrapper,
 #writingintro-wrapper {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -263,30 +268,42 @@ a {
 
 #aboutme-content {
   margin-top: 5vh;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 #hobbies {
   padding: 5vh;
   background-color: var(--transparentbox);
-  width: 100%;
+  width: 75%;
   margin: 2%;
 }
 
 #postPlan {
   padding: 5vh;
   background-color: var(--transparentbox);
-  width: 100%;
+  width: 75%;
   margin: 2%;
+}
+
+#big-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 #Achievements {
   padding: 5vh;
   background-color: var(--transparentbox);
-  width: 100%;
+  width: 75%;
   margin: 2%;
+}
+
+#aboutimage {
+  width: 40%;
+  display: flex;
+  justify-content: center;
 }
 
 #resume-contact {

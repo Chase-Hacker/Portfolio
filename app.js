@@ -108,3 +108,17 @@ particlesJS("particles-js", {
   },
   retina_detect: true,
 });
+
+let aboutimagine = document.getElementById("aboutimg");
+let abouttext = document.getElementsByClassName("aboutelements");
+for (element of abouttext) {
+  element.addEventListener("mouseover", (e) => {
+    console.log(e.img);
+  });
+}
+
+// abouttext.forEach(function (value, i) {
+//   console.log('%d: %s', i, value);
+// });
+
+aboutimagine.src = "images\netlify.png";
