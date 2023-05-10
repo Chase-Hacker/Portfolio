@@ -111,14 +111,11 @@ particlesJS("particles-js", {
 
 let aboutimagine = document.getElementById("aboutimg");
 let abouttext = document.getElementsByClassName("aboutelements");
-for (element of abouttext) {
-  element.addEventListener("mouseover", (e) => {
-    console.log(e.img);
+for (let i = 0; i < abouttext.length; i++) {
+  abouttext[i].addEventListener("mouseover", (e) => {
+    let theImage = abouttext[i].getAttribute("data-img");
+    aboutimagine.src = theImage;
   });
 }
 
-// abouttext.forEach(function (value, i) {
-//   console.log('%d: %s', i, value);
-// });
-
-aboutimagine.src = "images\netlify.png";
+// aboutimagine.src = "images\netlify.png";
