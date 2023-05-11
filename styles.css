@@ -67,6 +67,7 @@ li {
   font-family: "Quicksand", sans-serif;
 }
 
+
 #port-nav {
   top: 0;
   width: 100%;
@@ -290,7 +291,7 @@ a {
 
 #aboutme-content {
   margin-top: 5vh;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -305,32 +306,48 @@ a {
 #hobbies {
   padding: 5vh;
   background-color: var(--transparentbox);
-  width: 75%;
+  width: 100%;
   margin: 2%;
 }
 
 #postPlan {
   padding: 5vh;
   background-color: var(--transparentbox);
-  width: 75%;
+  width: 100%;
   margin: 2%;
 }
 
 #big-wrapper {
   display: flex;
   flex-wrap: nowrap;
+  height: 100%;
 }
 
 #Achievements {
   padding: 5vh;
   background-color: var(--transparentbox);
-  width: 75%;
+  width: 100%;
   margin: 2%;
 }
 
 #aboutimage {
-  width: 40%;
+  align-items: center;
   display: flex;
+  justify-content: center;
+
+}
+
+.transparentbox:hover {
+  animation: darkener 2s;
+  background-color: var(--lesstransparentbox);
+}
+
+#aboutimage-wrapper {
+  width: 50%;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+
   justify-content: center;
 }
 
@@ -348,6 +365,15 @@ a {
   background-color: var(--transparentbox);
   padding: 5vw;
   margin-top: 5vh;
+}
+
+@keyframes darkener {
+  from {
+    background-color: var(--transparentbox);
+  }
+  to {
+    background-color: var(--lesstransparentbox);
+  }
 }
 
 h3 {
