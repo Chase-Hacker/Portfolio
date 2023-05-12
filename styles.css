@@ -3,7 +3,7 @@
   color: var(--almostwhite);
 }
 img {
-  max-width: fit-content;
+  max-width: 100%;
 }
 
 html,
@@ -66,7 +66,6 @@ li {
   color: var(--almostwhite);
   font-family: "Quicksand", sans-serif;
 }
-
 
 #port-nav {
   top: 0;
@@ -156,7 +155,7 @@ li {
 
 .slide img {
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
   object-fit: cover;
 }
 
@@ -231,7 +230,8 @@ li {
 #layout,
 #cownect4,
 #essay,
-#delvetext {
+#delvetext,
+#coursera {
   background-color: var(--transparentbox);
   padding: 2vh;
   width: 40%;
@@ -243,7 +243,8 @@ li {
 #layout h2,
 #cownect4 h2,
 #essay h2,
-#delvetext h2 {
+#delvetext h2,
+#coursera h2 {
   display: flex;
   justify-content: center;
   font-size: 1.75rem;
@@ -251,10 +252,12 @@ li {
 
 a {
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 #prointro-wrapper,
-#writingintro-wrapper {
+#writingintro-wrapper,
+#personalintro-wrapper {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -265,7 +268,7 @@ a {
   width: 100%;
 }
 
-#thank-you {
+.thank-you {
   font-size: 2rem;
   width: 50%;
   display: flex;
@@ -274,11 +277,17 @@ a {
   padding: 5vh;
 }
 
-#thankyou-wrapper {
+.thankyou-wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 5vh;
+}
+
+#maillink {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #writingprojects {
@@ -334,12 +343,12 @@ a {
   align-items: center;
   display: flex;
   justify-content: center;
-
 }
 
 .transparentbox:hover {
   animation: darkener 2s;
-  background-color: var(--lesstransparentbox);
+  animation-fill-mode: forwards;
+  /* background-color: var(--lesstransparentbox); */
 }
 
 #aboutimage-wrapper {
@@ -354,6 +363,25 @@ a {
 #resume-contact {
   list-style: none;
   font-size: 1.5rem;
+}
+
+#contactinfo {
+  margin-top: 5vh;
+  width: 100%;
+    display: flex;
+  justify-content: center;
+}
+
+#tent-wrapper {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.contactimg {
+  padding: 2vh;
+  width: 20%;
+  background-color: var(--box);
 }
 
 #line {
@@ -372,7 +400,7 @@ a {
     background-color: var(--transparentbox);
   }
   to {
-    background-color: var(--lesstransparentbox);
+    background-color: var(--box);
   }
 }
 
