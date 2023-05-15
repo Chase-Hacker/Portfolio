@@ -16,7 +16,9 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -64,6 +66,15 @@ section {
 p,
 li {
   color: var(--almostwhite);
+  font-family: "Quicksand", sans-serif;
+}
+
+#name {
+  font-family: "Montserrat", sans-serif;
+}
+
+#toolsWrapper,
+.thank-you {
   font-family: "Quicksand", sans-serif;
 }
 
@@ -169,11 +180,17 @@ li {
   width: 100%;
   margin: 0;
   justify-content: center;
+  align-items: center;
   display: flex;
 }
 
 .explanation {
   font-size: 1.25rem;
+}
+
+#del-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .explanation-wrapper {
@@ -231,7 +248,8 @@ li {
 #cownect4,
 #essay,
 #delvetext,
-#coursera {
+#coursera,
+#advent {
   background-color: var(--transparentbox);
   padding: 2vh;
   width: 40%;
@@ -244,7 +262,8 @@ li {
 #cownect4 h2,
 #essay h2,
 #delvetext h2,
-#coursera h2 {
+#coursera h2,
+#adventText h2 {
   display: flex;
   justify-content: center;
   font-size: 1.75rem;

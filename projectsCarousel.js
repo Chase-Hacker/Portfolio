@@ -15,7 +15,6 @@ const nextSlide = document.querySelector(".btn-next");
 // add event listener and next slide functionality
 nextSlide.addEventListener("click", function () {
     //  curSlide++
-     console.log("function");
 
   slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
@@ -32,7 +31,6 @@ nextSlide.addEventListener("click", function () {
     curSlide = 0;
   } else {
     curSlide++;
-    console.log("if")
   }
 
 //   move slide by -100%

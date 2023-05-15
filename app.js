@@ -130,7 +130,7 @@ function hideNav() {
   }
 }
 
-drop.addEventListener("click", function() {
+drop.addEventListener("click", function () {
   let down = document.getElementById("dropdown");
   if (down.style.display === "none") {
     down.style.display = "block";
@@ -138,7 +138,4 @@ drop.addEventListener("click", function() {
   } else {
     down.style.display = "none";
   }
-})
-
-
-
+});
