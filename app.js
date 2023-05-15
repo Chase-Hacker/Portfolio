@@ -118,4 +118,27 @@ for (let i = 0; i < abouttext.length; i++) {
   });
 }
 
-// aboutimagine.src = "images\netlify.png";
+const drop = document.getElementById("hamburger");
+const menu = document.getElementById("dropdown");
+
+function hideNav() {
+  let x = document.getElementById("dropdown");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+drop.addEventListener("click", function() {
+  let down = document.getElementById("dropdown");
+  if (down.style.display === "none") {
+    down.style.display = "block";
+    menu.style.display = "block";
+  } else {
+    down.style.display = "none";
+  }
+})
+
+
+
